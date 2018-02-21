@@ -87,18 +87,11 @@ public class Main {
             differenceC=-differenceC;
         }
 
-        System.out.println(differenceA);
+        System.out.println(differenceC);
 
-        if(differenceA>differenceB){
-            solution = differenceB;
-        }
-        else {
-            solution = differenceA;
-        }
 
-        if(differenceA>differenceC){
-            solution = differenceC;
-        }
+        solution = Math.min(differenceA, differenceB);
+        solution = Math.min(solution, differenceC);
 
         return  solution;
 
